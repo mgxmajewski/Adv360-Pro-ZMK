@@ -84,8 +84,10 @@
     };
 };
 
-// Mouse pointer feel: reach full speed quickly (default ramp is 300ms).
-// acceleration-exponent stays 1 (linear); max speed = ZMK_POINTING_DEFAULT_MOVE_VAL.
+// Mouse pointer feel: slow, precise start that then ramps up hard (ease-in).
+// acceleration-exponent 2 = quadratic curve; the longer ramp keeps the slow
+// low-speed zone usable for fine moves. Max speed = ZMK_POINTING_DEFAULT_MOVE_VAL.
 &mmv {
-    time-to-max-speed-ms = <150>;
+    time-to-max-speed-ms = <400>;
+    acceleration-exponent = <2>;
 };
