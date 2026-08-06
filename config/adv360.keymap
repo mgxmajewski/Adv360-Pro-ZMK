@@ -65,7 +65,7 @@
             display-name = "Fn";
             bindings = <
 &kp F1  &kp F2  &kp F3  &kp F4  &kp F5  &kp F6  &tog 2                                            &mo 4      &kp F7          &kp F8          &kp F9        &kp F10          &kp F11  &kp F12
-&trans  &trans  &trans  &trans  &trans  &trans  &none                                             &none      &msc SCRL_LEFT  &msc SCRL_DOWN  &msc SCRL_UP  &msc SCRL_RIGHT  &tog 0   &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &none                                             &none      &msc SCRL_LEFT  &msc SCRL_DOWN  &msc SCRL_UP  &msc SCRL_RIGHT  &tog 1   &trans
 &trans  &trans  &trans  &trans  &trans  &trans  &none   &trans  &trans      &trans     &trans     &none      &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_UP  &mmv MOVE_RIGHT  &trans   &trans
 &trans  &trans  &trans  &trans  &trans  &trans                  &trans      &trans                           &trans          &trans          &trans        &trans           &trans   &trans
 &trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans      &mkp MCLK  &mkp RCLK  &mkp LCLK                  &trans          &trans        &trans           &trans   &trans
@@ -86,6 +86,6 @@
 };
 
 &mmv {
-    time-to-max-speed-ms = <400>;
+    time-to-max-speed-ms = <280>;
     acceleration-exponent = <2>;
 };
